@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cadastro.css">
+
+    <title>Cadastre-se | NeoGuard</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav>
+        <img src="./assets/Logo - Default (2).svg" alt="NeoGuard - Logo" class="logo">
+        <div>
+            <a href="../../index.html">Home</a>
+            <a href="../../index.html#sobre">Sobre nós</a>
+            <a href="../../index.html#servicos">Serviços</a>
+            <a href="../../index.html#contato">Contato</a>
+            <a class="traco"> | </a>
+            <button class="nav-btn">
+                <a href="../../login.html">Entrar</a>
+            </button>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- LADO ESQUERDO -->
+        <div class="lado-esquerdo">
+            <div class="decoracao">
+                <div class="bola cor1"></div>
+                <div class="bola cor2"></div>
+                <div class="bola cor3"></div>
+                <div class="bola cor3-a"></div>
+                <div class="bola cor4"></div>
+            </div>
+
+            <div class="conteudo-esquerdo">
+                <div class="ilustracao">
+                    <img src="./assets/cadastro-img/Cadastro.png" alt="Ilustração de cadastro hospital">
+                </div>
+            </div>
+        </div>
+
+        <!-- LADO DIREITO -->
+        <div class="lado-direito">
+            <div class="etapas">
+                <div class="etapasContent">
+                    <div class="etapa1"></div>
+                    <div id="linha"></div>
+                    <div id="etapa2"></div>
+                    <div id="linha2"></div>
+                    <div class="etapa3"></div>
+                </div>
+                <div class="etapasLabels">
+                    <label id="labelEtapa1">Hospital</label>
+                    <label id="labelEtapa2">Gestor Hospital</label>
+                </div>
+            </div>
+            <h2>Cadastre-se</h2>
+            <p class="mensagem-cadastro">Preencha os dados abaixo para se cadastrar.</p>
+
+            <form id="formCadastroHospital">
+                <div class="input-group">
+                    <label for="nome">Nome do Hospital</label>
+                    <input type="text" id="iptHospital" placeholder="Digite o nome do hospital" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="cnpj">CNPJ</label>
+                    <input type="text" id="iptCnpj" placeholder="00.000.000/0001-00" required>
+                </div>
+                <button type="button" onclick="cadastrarHospital()" class="btn-cadastro">Cadastrar</button>
+            </form>
+            <div id="cadastrarSalaNeonatal"></div>
+            <div id="formCadastroGestor" style="display: none;"></div>
+            <div id="msgErro" style="display: none;">
+                <p>Preencha todos os campos em brancos</p>
+            </div>
+            <!-- Alerta customizado NeoGuard -->
+            <div class="neo-alert" id="neoAlert">
+                <div class="neo-alert-box">
+                    <p id="neoAlertMsg"></p>
+                    <button onclick="fecharNeoAlert()">Fechar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="./js/cadastro.js"></script>
+
+<script>
+    function ativarLabel(n) {
+        const labels = [
+            document.getElementById("labelEtapa1"),
+            document.getElementById("labelEtapa2")
+        ];
+
+        labels.forEach((l, i) => {
+            l.classList.remove("ativa", "concluida");
+
+            if (i < n - 1) l.classList.add("concluida");
+            if (i === n - 1) l.classList.add("ativa");
+        });
+    }
+
+    function neoAlert(msg) {
+        document.getElementById("neoAlertMsg").innerText = msg;
+        document.getElementById("neoAlert").style.display = "flex";
+    }
+
+    function fecharNeoAlert() {
+        document.getElementById("neoAlert").style.display = "none";
+    }
+
+       
+</script>
+
+
+</html>

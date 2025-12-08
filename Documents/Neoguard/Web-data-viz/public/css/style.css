@@ -1,0 +1,781 @@
+/* Tudo completo por aqui */
+
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Nunito */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/*Resentando todas as margens e paddings*/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+.bolinhas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.bolinhas span {
+    position: absolute;
+    border-radius: 50%;
+    width: 8%;
+    height: 16%;
+    opacity: 0.4;
+}
+
+.bolinhas span.cor1 {
+    background-color: #A5D8FF;
+}
+
+.bolinhas span.cor2 {
+    background-color: #A88CFF;
+}
+
+.bolinhas span.cor3 {
+    background-color: #FFD2A5;
+}
+
+body {
+    list-style-type: none;
+    background-color: #f2f3ee;
+    width: 100vw;
+    height: 100vh;
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+    color: #2E2E2E;
+    overflow-x: hidden;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+    padding: 2.5% 10%;
+    box-sizing: border-box;
+}
+[id] {
+    scroll-margin-top: 100px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 3rem;
+    font-size: 800;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* NavBar --------------------------------------------------------------------------------------*/
+
+nav {
+    z-index: 6;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 10vh;
+    width: 100%;
+    padding: 10px 2%;
+    background-color: #FEFEFE;
+    box-shadow: 2px 0 4px #2E2E2E;
+}
+
+.logo {
+    width: 15%;
+    min-width: 150px;
+}
+
+nav>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.4rem;
+    box-sizing: border-box;
+}
+
+nav>div a {
+    font-family: "Nunito";
+    color: #000000;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Elementos --------------------------------------------------------------------------------------*/
+
+.nav-btn {
+    padding: 8px 10px;
+    border: 2px solid #F67E27;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.nav-btn a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #F67E27;
+}
+
+.nav-btn a:hover {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-btn:hover {
+    transition: 0.5s;
+    background-color: #F67E27;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* NavBar Fim  --------------------------------------------------------------------------------------*/
+
+/*main ---------------------------------------------------------------------------------------------*/
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+.traco {
+    margin-top: -1%;
+    color: rgb(38, 38, 38);
+    font-size: 35px;
+    font-weight: 100;
+}
+
+/* Apresentação da empresa -------------------------------------------------------------------------------------------------*/
+
+.apresentacao {
+    display: flex;
+    padding-top: 15%;
+    font-family: "Montserrat";
+    justify-content: space-between;
+    background-color: #fafafa;
+}
+
+.apresentacao-texto {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 2rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+    font-family: "Nunito";
+    color: #2E2E2E;
+}
+
+.apresentacao-texto p {
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    gap: 2rem;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "Nunito";
+    color: #2E2E2E;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    z-index: 3;
+    font-size: 32px;
+    font-family: "Montserrat";
+}
+
+.apresentacao-btn {
+    margin-left: 60%;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 17px;
+    border-radius: 10px;
+    background-color: #F67E27;
+    color: #FEFEFE;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Nunito";
+}
+
+.apresentacao-btn>img {
+    width: 30px;
+}
+
+
+.apresentacao>img {
+    width: 45%;
+    margin-top: -9%;
+}
+
+/*Apresentação - FIM -------------------------------------------------------------------------------------------------*/
+
+
+/*Valores  -------------------------------------------------------------------------------------------------*/
+
+.valores {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.valores-texto {
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.valores-texto h2 {
+    font-family: "Montserrat";
+    flex-direction: column;
+    color: #2E2E2E;
+}
+
+.valores-texto span {
+    color: #A992F3;
+    margin-left: 0%;
+    font-family: "Montserrat";
+    flex-direction: column;
+}
+
+.valores-texto p {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "Nunito";
+    color: #2E2E2E;
+}
+
+.valores-grupo {
+    width: 100%;
+    display: flex;
+    margin-left: 8%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.valor {
+    justify-content: center;
+    width: 70%;
+}
+
+.valor p {
+    color: #2E2E2E;
+    margin-top: 4%;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Montserrat";
+}
+
+.valor img {
+    transition: transform 0.4s ease;
+}
+
+.valor img:hover {
+    transform: scale(1.1);
+}
+
+/*Valores - Fim -------------------------------------------------------------------------------------------------*/
+
+
+/*Serviços  -------------------------------------------------------------------------------------------------*/
+
+.servicos-container {
+    background-color: #fafafa;
+}
+
+.servicos {
+    z-index: 2;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+
+.servico {
+    gap: 14px;
+    width: 48%;
+    height: 250px;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    border-radius: 15px;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    border: 2px solid #F67E27;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.servico img {
+    width: 50px;
+    margin-top: 4%;
+}
+
+.servicos-container h2 {
+    font-family: "Montserrat";
+}
+
+.servicos-container h3 {
+    font-size: 19px;
+    margin-top: 1%;
+    font-family: "Montserrat";
+}
+
+.servicos-container p {
+    font-size: 15px;
+    padding: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: justify;
+    font-family: "Montserrat";
+}
+
+.servico:hover {
+    transition: 0.8s;
+    transform: scale(1.1);
+}
+
+/*Serviços -FIM  -------------------------------------------------------------------------------------------------*/
+
+
+/*Equipe  -------------------------------------------------------------------------------------------------*/
+
+.equipe {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.sessao-equipe h2 {
+    font-family: "Montserrat";
+}
+
+.colaborador {
+    flex: 1 1 300px;
+    width: 320px;
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.colaborador>img {
+    width: 70%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.links-container {
+    background: #fff;
+    padding: 0.8rem 1rem;
+    border-radius: 12px;
+    border: 3px solid #a992f384;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.10);
+    width: 80%;
+    position: absolute;
+    bottom: 15px;
+    left: 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.links-container .nome {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
+
+.links img {
+    width: 28px;
+    transition: 0.2s ease;
+}
+
+.links img:hover {
+    transform: scale(1.1);
+}
+
+/* Equipe - Fim -------------------------------------------------------------------------------------------------*/
+
+
+/* Calculadora -------------------------------------------------------------------------------------------------*/
+
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.tituloCalculadora {
+    font-size: 26px;
+    text-align: center;
+    font-family: "Montserrat";
+}
+
+.legendaCalculadora {
+    font-weight: 300;
+    color: #2E2E2E;
+    font-size: 20px;
+    margin-top: 1%;
+    z-index: 3;
+    margin-bottom: 3%;
+    text-align: center;
+    font-family: "Nunito";
+}
+
+.inserirDados {
+    width: 60%;
+    background-color: #fefefe;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 15px;
+    box-shadow: 1px 5px 8px rgba(127, 127, 127, 0.61);
+
+}
+
+.input-icon {
+    position: relative;
+    width: 100%;
+}
+
+.input-icon img {
+    position: absolute;
+    width: 35px;
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.input-icon input {
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 20px 20px 20px 50px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    color: #999999;
+    font-size: 1rem;
+    font-family: "Nunito";
+}
+
+.input-icon input::placeholder {
+    color: #969696;
+}
+
+
+.inserirDados>button {
+    font-size: 22px;
+    font-family: "Nunito";
+    font-weight: bolder;
+    background-color: #F67E27;
+    color: #fafafa;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.inserirDados>button:hover {
+    cursor: pointer;
+    transition: 0.6s;
+    background-color: #ff6a00;
+}
+
+/* Depois que clica */
+
+.resposta {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+/* Cabeçalho do card */
+
+.resposta-head {
+    width: 88%;
+    padding: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 12px;
+}
+
+.card {
+    gap: 15px;
+    width: 50%;
+    display: flex;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-family: "Nunito";
+}
+
+/* Linhas do card */
+
+.rowCard {
+    gap: 25px;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: flex-start;
+}
+
+.rowCard i {
+    width: 70px;
+    font-size: 3rem;
+}
+
+.divisor {
+    border: 0;
+    width: 90%;
+    margin: 0 auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.textValor {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    font-family: "Nunito";
+}
+
+.valor {
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: left;
+    font-family: "Nunito";
+}
+
+
+.sem-sis {
+    background-color: #A992F3;
+}
+
+.textSemSistema {
+    color: #A992F3;
+}
+
+.com-sis {
+    background-color: #F67E27;
+    /* laranja */
+}
+
+.textComSistema {
+    color: #F67E27;
+}
+
+/*Calculadora - fim -------------------------------------------------------------------------------------------------*/
+
+/*footer  -------------------------------------------------------------------------------------------------*/
+
+footer {
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+    background-color: #1C3AB4;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #fafafa;
+    gap: 20px;
+}
+
+.neo {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.neo img {
+    width: 160px;
+}
+
+.neo p {
+    font-family: "Nunito";
+    font-weight: 300;
+}
+
+.neo b {
+    font-size: 20px;
+    font-family: "Montserrat";
+    line-height: 1.4;
+}
+
+/* Coluna 02 */
+
+.info {
+    gap: 60px;
+    width: 20%;
+    display: flex;
+    margin-top: 1%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info b {
+    font-size: 20px;
+    font-family: "Montserrat";
+    line-height: 1.4;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info li {
+    margin-bottom: 8px;
+}
+
+.infoa {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.info ul li a:hover {
+    color: #ff9d00;
+}
+
+.info>div>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 6px 0;
+}
+
+.f-img {
+    width: 22px;
+}
+
+/* Coluna 03 com formulário */
+
+.formes {
+    width: 30%;
+    background-color: #A88CFF;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-size: 20px;
+}
+
+.f-input input {
+    width: 92%;
+    padding: 14px;
+    border-radius: 8px;
+    background-color: #fefefe4c;
+}
+
+.f-input b {
+    font-size: 16px;
+    font-family: "Nunito";
+}
+
+.f-button {
+    color: #fefefe;
+    font-weight: 700;
+    font-family: "Nunito";
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    background-color: #F67E27;
+}
+
+/* Direitos reservados */
+
+.divisor02 {
+    border: 0;
+    width: 90%;
+    margin: 0 auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-bottom {
+    width: 100%;
+    background-color: #1C3AB4;
+    color: #fafafa;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+
+
+@keyframes flutuar {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(20px, 15px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.animada {
+    animation: flutuar 8s ease-in-out infinite alternate;
+}
+
+/* 
+- Titulos do painel(Na pagina Analitycs/Dashboard, trocar os titulos dos gráficos e sessões para que faça mais sentido);
+- Trocar o nome/imgs das paginas do painel (Analityc, Usuarios e incubadoras)
+- Link do log-out;
+- icone de limpar;
+- Tela de login: tirar cadastro
+
+- footer - Formulario (loop);
+*/
