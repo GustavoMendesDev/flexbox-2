@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="projeto-nivelamento-ads-b" />
+        <module name="introducao-encapsulamento" />
+        <module name="exemplo-encapsulamento2" />
+        <module name="revisao-metodos" />
+        <module name="template-tarefa-java" />
+        <module name="introducao-poo (1)" />
+        <module name="ac01-pratica" />
+        <module name="introducao-poo" />
+        <module name="exercicio-array" />
+        <module name="exercicio-scanner" />
+        <module name="exemplo-scanner-list" />
+        <module name="exemplo-encap" />
+        <module name="template-tarefa-java (2)" />
+        <module name="template-tarefa-java (1)" />
+        <module name="exemplo-vetor-metodo" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

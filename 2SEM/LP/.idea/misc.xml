@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/exemplo-encap/pom.xml" />
+        <option value="$PROJECT_DIR$/introducao-poo/pom.xml" />
+        <option value="$PROJECT_DIR$/exemplo-scanner-list/pom.xml" />
+        <option value="$PROJECT_DIR$/exemplo-vetor-metodo/pom.xml" />
+        <option value="$PROJECT_DIR$/exemplo-encapsulamento2/pom.xml" />
+        <option value="$PROJECT_DIR$/projeto-nivelamento-ads-b/pom.xml" />
+        <option value="$PROJECT_DIR$/ac01-pratica-GustavoMendesDev/pom.xml" />
+        <option value="$PROJECT_DIR$/07-introducao-poo-GustavoMendesDev/pom.xml" />
+        <option value="$PROJECT_DIR$/04-exercicio-array-GustavoMendesDev/pom.xml" />
+        <option value="$PROJECT_DIR$/06-revisao-metodos-GustavoMendesDev/pom.xml" />
+        <option value="$PROJECT_DIR$/05-exercicio-scanner-GustavoMendesDev/pom.xml" />
+        <option value="$PROJECT_DIR$/03-nivelamento-metodos-GustavoMendesDev/pom.xml" />
+        <option value="$PROJECT_DIR$/hora-do-cafe-01-data-hora-GustavoMendesDev/pom.xml" />
+        <option value="$PROJECT_DIR$/08-introducao-encapsulamento-GustavoMendesDev/pom.xml" />
+        <option value="$PROJECT_DIR$/hora-do-cafe-02-exercicio-lista-estatica-GustavoMendesDev/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="corretto-21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

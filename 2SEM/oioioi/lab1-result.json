@@ -1,0 +1,14 @@
+{
+  "lab_id": "SON-EC2-LAB1-20261",
+  "aluno_ra": "01252015",
+  "aws_account_id": "933213144751",
+  "instance_id": "i-0622f2b504ea3ed7e",
+  "instance_type": "t3.small",
+  "region": "us-east-1",
+  "vcpu": 2,
+  "ram_mb": 2048,
+  "disk_gb": 20,
+  "ssh_port_22_listening": true,
+  "timestamp_utc": "2026-02-26T23:31:44Z",
+  "validation_hash": "116a7c1f61f482a982f68406d938a4a0337891376dbb86d243601d80a07f018f"
+}
